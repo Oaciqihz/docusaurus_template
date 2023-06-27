@@ -1,0 +1,44 @@
+.home{
+    main{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .home-container{
+            width: 1140px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .introduce{
+                width: 40%;
+            }
+            img{
+                width: 50%;
+            }
+            h1{
+                font-size: 40px;
+                font-weight: 800;
+            }
+            p{
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 1.5px;
+            }
+            button{
+                width: 200px;
+                height: 40px;
+                margin-top: 30px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+main{
+    line-height: 26px;
+    h1{
+        font-weight: 700;
+    }
+    h2{
+        font-weight: 600;
+    }
+}
