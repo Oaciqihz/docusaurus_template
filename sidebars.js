@@ -21,5 +21,30 @@ module.exports = {
       label: 'Link Type 内链',
       href: '/',
     },
+    {
+      type: 'html',
+      value: '<h1>HTML Type</h1>', // 要渲染的 HTML
+      defaultStyle: true, // 使用默认的菜单项目样式
+    },
+    {
+      type: 'category',
+      label: 'Category Type',
+      link: {
+        type: 'generated-index',
+        title: 'Category',
+        description: '描述',
+        slug: '/category/docusaurus-guides'
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'tmpl/category1',
+        },
+        {
+          type: 'doc',
+          id: 'tmpl/category2',
+        }
+      ],
+    }
   ]
 };

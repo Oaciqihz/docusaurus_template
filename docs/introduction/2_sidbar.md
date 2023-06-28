@@ -80,38 +80,3 @@ type SidebarItemCategory = {
   collapsed: boolean; // 把类别设置为默认折叠或打开
 };
 ```
-```js title="sidebars.js"
-module.exports = {
-  mySidebar: [
-    {
-      type: 'category',
-      label: 'Getting Started',
-      items: [
-        {
-          type: 'doc',
-          id: 'doc1',
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Docusaurus',
-      items: [
-        {
-          type: 'doc',
-          id: 'doc2',
-        },
-        {
-          type: 'doc',
-          id: 'doc3',
-        },
-      ],
-    },
-    {
-      type: 'link',
-      label: 'Learn more',
-      href: 'https://example.com',
-    },
-  ],
-};
-```

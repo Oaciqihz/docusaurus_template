@@ -43,8 +43,35 @@ module.exports = {
   mySidebar: [
     {
       type: 'html',
-      value: '<img src="sponsor.png" alt="Sponsor" />', // 要渲染的 HTML
+      value: '<h1>HTML Type</h1>', // 要渲染的 HTML
       defaultStyle: true, // 使用默认的菜单项目样式
+    }
+  ],
+};
+```
+## Category 
+```js title="sidebars.js"
+module.exports = {
+  mySidebar: [
+    {
+      type: 'category',
+      label: 'Category Type',
+      link: {
+        type: 'generated-index',
+        title: 'Category',
+        description: '描述',
+        slug: '/category/docusaurus-guides'
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'tmpl/category1',
+        },
+        {
+          type: 'doc',
+          id: 'tmpl/category2',
+        }
+      ],
     }
   ],
 };
